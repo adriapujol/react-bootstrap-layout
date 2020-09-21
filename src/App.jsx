@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Container from 'react-bootstrap/Container';
+import cardImage from './img/cardbg.jpg';
 import './App.css';
 
 function App() {
@@ -22,11 +23,11 @@ function App() {
             </Col>
               <Col xs={4} className="bg-secondary d-flex justify-content-center align-items-center">
                 <Card style={{ width: '13rem' }}>
-                  <Card.Img src="cardbg.jpg" alt="Card image" />
+                  <Card.Img src={cardImage} alt="Card image" />
                   <Card.Body>
-                    <Card.ImgOverlay>
-                      <Card.Title>Nice Title</Card.Title>
-                      <Card.Subtitle className="text-muted">Subtitle this</Card.Subtitle>
+                    <Card.ImgOverlay className="d-flex flex-column">
+                        <Card.Title className="text-white">Nice Title</Card.Title>
+                        <Card.Subtitle className="text-white">Subtitle this</Card.Subtitle>
                     </Card.ImgOverlay>
                     <Card.Text>
                       This is some amazing text dammit. Legit cool.
