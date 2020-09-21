@@ -14,29 +14,40 @@ function App() {
     <div className="App">
       <Container fluid className="min-vh-100">
         <Row className="vh-100">
-          <Col className="h-100">
+          <Col xs={6} className="h-100">
             <Row className="h-50">
-              <Col className="bg-primary">
+              <Col xs={8} className="bg-primary">
                 Breadcrumb
                 Data picker
             </Col>
-              <Col className="bg-secondary text-white">
-                Card
-            </Col>
+              <Col xs={4} className="bg-secondary d-flex justify-content-center align-items-center">
+                <Card style={{ width: '13rem' }}>
+                  <Card.Img src="cardbg.jpg" alt="Card image" />
+                  <Card.Body>
+                    <Card.ImgOverlay>
+                      <Card.Title>Nice Title</Card.Title>
+                      <Card.Subtitle className="text-muted">Subtitle this</Card.Subtitle>
+                    </Card.ImgOverlay>
+                    <Card.Text>
+                      This is some amazing text dammit. Legit cool.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
             </Row>
             <Row className="h-50">
-              <Col className="bg-danger">
+              <Col xs={4} className="bg-danger">
                 DatePicker
             </Col>
-              <Col className="bg-success">
+              <Col xs={8} className="bg-success">
                 Dropdown
             </Col>
             </Row>
           </Col>
-          <Col className="bg-warning h-100">
+          <Col xs={3} className="bg-warning h-100">
             Form goes here
           </Col>
-          <Col className="h-100">
+          <Col xs={3} className="h-100">
             <Row className="h-50">
               <Col className="bg-info h-100">
                 Slider
@@ -45,7 +56,7 @@ function App() {
             <Row className="h-50">
               <Col className="bg-primary h-100">
                 Checkbox
-            </Col>
+              </Col>
             </Row>
           </Col>
         </Row>
