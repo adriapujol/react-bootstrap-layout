@@ -7,24 +7,24 @@ import Card from 'react-bootstrap/Card';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Container from 'react-bootstrap/Container';
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Container fluid>
-        <Row>
-          <Col>
-            <Row>
+      <Container fluid className="min-vh-100">
+        <Row className="vh-100">
+          <Col className="h-100">
+            <Row className="h-50">
               <Col className="bg-primary">
-                Breadcrumb and Search input
+                Breadcrumb
+                Data picker
             </Col>
               <Col className="bg-secondary text-white">
                 Card
             </Col>
             </Row>
-            <Row>
+            <Row className="h-50">
               <Col className="bg-danger">
                 DatePicker
             </Col>
@@ -33,17 +33,17 @@ function App() {
             </Col>
             </Row>
           </Col>
-          <Col className="bg-warning">
+          <Col className="bg-warning h-100">
             Form goes here
-        </Col>
-          <Col>
-            <Row>
-              <Col className="bg-info">
+          </Col>
+          <Col className="h-100">
+            <Row className="h-50">
+              <Col className="bg-info h-100">
                 Slider
             </Col>
             </Row>
-            <Row>
-              <Col className="bg-primary">
+            <Row className="h-50">
+              <Col className="bg-primary h-100">
                 Checkbox
             </Col>
             </Row>
