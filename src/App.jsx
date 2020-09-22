@@ -13,13 +13,14 @@ import cardImage from './img/cardbg.jpg';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <Container fluid className="min-vh-100">
         <Row className="vh-100">
           <Col xs={6} className="h-100">
             <Row className="h-50">
-              <Col xs={8} className="bg-primary">
+              <Col xs={8} className="bg-primary border border-bottom-0 border-dark">
                 <Row className="h-10">
                   <Breadcrumb className="bg-transparent">
                     <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -38,7 +39,7 @@ function App() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={4} className="bg-secondary d-flex justify-content-center align-items-center">
+              <Col xs={4} className="bg-secondary border border-left-0 bordet-bottom-0 border-dark d-flex justify-content-center align-items-center">
                 <Card className="bg-dark border-dark text-center" style={{ width: '13rem' }}>
                   <Card.Img src={cardImage} alt="Card image" />
                   <Card.Body>
@@ -54,10 +55,12 @@ function App() {
               </Col>
             </Row>
             <Row className="h-50">
-              <Col xs={4} className="bg-danger">
-                DatePicker
-            </Col>
-              <Col xs={8} className="bg-success d-flex justify-content-center align-items-center">
+              <Col xs={4} className="bg-danger border border-dark d-flex justify-content-center align-items-center">
+                <Col xs={10}>
+                  <Form.Control className="text-center" placeholder="Date Picker" />
+                </Col>
+              </Col>
+              <Col xs={8} className="bg-success border border-left-0 border-dark d-flex justify-content-center align-items-center">
                 <Dropdown className="rounded-0">
                   <Dropdown.Toggle className="rounded-0" variant="dark" id="dropdown-basic">
                     Dropping Down
@@ -72,7 +75,7 @@ function App() {
               </Col>
             </Row>
           </Col>
-          <Col xs={3} className="bg-warning h-100 d-flex justify-content-center align-items-center">
+          <Col xs={3} className="bg-warning border border-left-0 border-dark h-100 d-flex justify-content-center align-items-center">
             <Form>
               <Form.Row>
                 <InputGroup className="mb-3">
@@ -104,7 +107,7 @@ function App() {
           </Col>
           <Col xs={3} className="h-100">
             <Row className="h-50">
-              <Col className="bg-info h-100 d-flex justify-content-center align-items-center">
+              <Col className="bg-info border border-left-0 border-dark h-100 d-flex justify-content-center align-items-center">
                 <Col xs={10}>
                   <Form className="w-100">
                     <Form.Group className="text-center text-white" controlId="formBasicRange">
@@ -118,7 +121,7 @@ function App() {
               </Col>
             </Row>
             <Row className="h-50">
-              <Col className="bg-primary h-100 d-flex flex-column justify-content-center align-items-center">
+              <Col className="bg-primary border border-left-0 border-top-0 border-dark h-100 d-flex flex-column justify-content-center align-items-center">
                 <Form.Check
                   className="text-white"
                   label="Option 1"
